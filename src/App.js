@@ -3,9 +3,10 @@ import Button from "./components/button";
 function App() {
   return (
     <div className="App">
-      <p>Buttons</p>
-      <Button />
-      <Button />
+      <p>0</p>
+      <Button nome='Add Cont'/>
+      <Button nome='Remove Count'/>
+      <Button nome='Close'/>
     </div>
   );
 }
