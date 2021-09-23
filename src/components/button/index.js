@@ -1,3 +1,5 @@
+import { toggle } from "../../App"
+
 const buttonStyle = {
     backgroundColor: 'white',
     color: '#add8e6',
@@ -5,12 +7,14 @@ const buttonStyle = {
     borderColor: 'white',
     width: '175px',
     height: '50px',
-    fontSize: '1.25em'
+    fontSize: '1.25em',
+    marginLeft: '1%',
+    marginRight: '1%'
 }
 
-const Button = ({nome}) => {
+const Button = ({name}) => {
     return (
-        <button style={buttonStyle}>+ {nome}</button>
+        <button style={buttonStyle}>{name}</button>
     )
 }
 
