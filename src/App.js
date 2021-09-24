@@ -33,7 +33,7 @@ function App() {
       <p style={ pStyle }>{ count }</p>
       <Button onClick={() => setCount(count + 1)} name='Add Cont' />
       <Button onClick={() => setCount(count - 1)} name='Remove Count' />
-      <Button onClick={ toggle }>{ name }</Button>
+      <Button onClick={ toggle } name={ name } />
     </div>
   );
 }
