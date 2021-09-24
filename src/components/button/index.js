@@ -10,9 +10,14 @@ const buttonStyle = {
     marginRight: '1%'
 }
 
-const Button = ({name, ...rest}) => {
+const Button = ({ name, ...rest }) => {
     return (
-        <button {...rest} style={buttonStyle}>{name}</button>
+        <button
+            style={buttonStyle}
+            {...rest}
+        >
+            {name}
+        </button>
     )
 }
 
