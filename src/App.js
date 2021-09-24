@@ -18,8 +18,11 @@ function App() {
   const [count, setCount] = useState(0);
   const [name, setName] = useState('Close');
 
-  function toggle(){
-    if(name === 'Close'){
+  const incrementCount = () => setCount(count + 1)
+  const decrementCount = () => setCount(count - 1)
+
+  const toggle = () => {
+    if (name === 'Close') {
       setCount(' ');
       setName('Open');
     } else {
@@ -29,11 +32,11 @@ function App() {
   }
 
   return (
-    <div className="App" style={ bodyStyle }>
-      <p style={ pStyle }>{ count }</p>
-      <Button onClick={() => setCount(count + 1)} name='Add Cont' />
-      <Button onClick={() => setCount(count - 1)} name='Remove Count' />
-      <Button onClick={ toggle } name={ name } />
+    <div className="App" style={bodyStyle}>
+      <p style={pStyle}>{count}</p>
+      <Button onClick={incrementCount} name='Add Cont' />
+      <Button onClick={decrementCount} name='Remove Count' />
+      <Button onClick={toggle} name={name} />
     </div>
   );
 }
