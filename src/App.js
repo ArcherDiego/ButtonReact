@@ -2,7 +2,7 @@ import Button from "./components/button";
 import React, { useState } from 'react';
 
 const bodyStyle = {
-  backgroundColor: '#add8e6',
+  backgroundColor: '#00008b',
   height: '100%',
   textAlign: 'center'
 }

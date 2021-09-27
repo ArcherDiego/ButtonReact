@@ -1,6 +1,6 @@
 const buttonStyle = {
     backgroundColor: 'white',
-    color: '#add8e6',
+    color: '#00008b',
     borderRadius: '5px',
     borderColor: 'white',
     width: '175px',
